@@ -1,0 +1,43 @@
+
+.navbar {
+    height: auto;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+    background-color: #fff;
+    color: #1667ff;
+    background-image: url(../../assets/gato.png);
+    background-position: right;
+    background-position-y: -238px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.navbar__title {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    height: 1em;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5em;
+}
+
+.navbar__links > a {
+    text-decoration: dashed;
+    color: #000;
+    padding: 0px 4px;
+}
+
+.navbar__links > a:hover {
+    text-decoration: overline;
+    color: #1667ff;
+}

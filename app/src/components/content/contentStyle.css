@@ -1,0 +1,9 @@
+.content {
+    height: 100%;
+    padding: 10px;
+    background-image: url(../../assets/mascotas.png);
+    background-repeat: repeat;
+    background-size: 90px;
+    background-clip: padding-box;
+    background-color: #00000030;  
+}
