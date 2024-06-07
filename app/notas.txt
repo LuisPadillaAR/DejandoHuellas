@@ -6,6 +6,7 @@ git merge <rama dev> (debo estar en la rama main o a la que quiero que unir una 
 git status (mestras los archivos que se agregaron o modificaron)
 git push (es para subir a github)
 git log (historial de commit)
+git switch <rama> (cambiar entre ramas)
 
 
 pasos 
