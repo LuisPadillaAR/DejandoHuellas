@@ -16,7 +16,7 @@ export default function Patient() {
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Nombre</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tipo</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tamaño (cm)</TableCell>
-                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>peso (kg)</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>peso (kgmod)</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>dueño</TableCell>
                     </TableRow>
                 </TableHead>
