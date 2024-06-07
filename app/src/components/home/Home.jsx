@@ -1,18 +1,23 @@
 import NavBar from '../navbar/NavBar';
 import './homeStyle.css';
-import Content from '../content/Content';
+import { Button, Container, Grid } from '@mui/material';
 
 
 
 export const ExplorerNav = () => {
     return (
-        <div className='explorer'>
-            <ItemExplorer name="Gestión" fn={() => document.location.href = '/management'}/>
-            <ItemExplorer name="Cerrar sesión" fn={() => document.location.href = '/login'}/>
-            <ItemExplorer name="Otros..." />
-        </div>
-    );
-}
+        <Container className='explorer' maxWidth="auto" sx={{p: 2, width: "fit-content", m: 0}}>
+            <Grid container columns={2}>
+                <Grid item md={2}>
+                    <Button variant='text'>Gestión</Button>
+                </Grid>
+                <Grid item md={2}>
+                    <Button variant='text'>Cerrar sesión</Button>
+                </Grid>
+            </Grid>
+        </Container>
+        )    
+    }
 
 const ItemExplorer = ({ name, fn }) => {
     return (
@@ -24,8 +29,7 @@ export const Home = () => {
     return (
         <div className="home__container">
             <NavBar />
-            <Content con={<ExplorerNav />}>
-            </Content>
+            <ExplorerNav />
         </div>
     );
 }

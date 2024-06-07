@@ -25,19 +25,3 @@
     height: 1em;
 }
 
-.navbar__links {
-    display: flex;
-    gap: 10px;
-    font-size: 1.5em;
-}
-
-.navbar__links > a {
-    text-decoration: dashed;
-    color: #000;
-    padding: 0px 4px;
-}
-
-.navbar__links > a:hover {
-    text-decoration: overline;
-    color: #1667ff;
-}

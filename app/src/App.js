@@ -4,6 +4,7 @@ import { Login } from './components/login/Login';
 import { Register } from './components/register/Register';
 import { Home } from './components/home/Home';
 import Management from './components/management/Management';
+import Patient from './components/patient/Patient';
 
 export default function App() {
 
@@ -24,6 +25,10 @@ export default function App() {
     {
       path: '/management',
       element: <Management />
+    },
+    {
+      path: '/patients',
+      element: <Patient />
     }
   ])
  

@@ -1,4 +1,4 @@
-import Content from "../content/Content";
+
 import NavBar from "../navbar/NavBar";
 import './managementStyle.css'
 import { Link } from "react-router-dom";
@@ -24,7 +24,6 @@ const Management = () => {
     return (
         <div className="management__content">
             <NavBar />
-            <Content con={<Menu />} />
         </div>
     );
 }
