@@ -8,7 +8,7 @@ git push (es para subir a github)
 git log (historial de commit)
 git switch <rama> (cambiar entre ramas)
 git push --set-upstream origin <rama actual> (para hacer push fuera de la rama main)
-
+prueba
 pasos 
 
 git add .
