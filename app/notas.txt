@@ -5,3 +5,10 @@ git commit -m "(mensaje)" (guarda cambios hasta ese instante  )
 git merge <rama dev> (debo estar en la rama main o a la que quiero que unir una rama)
 git status (mestras los archivos que se agregaron o modificaron)
 git push (es para subir a github)
+
+
+pasos 
+
+git add .
+git commit -m "mensaje"
+git push
