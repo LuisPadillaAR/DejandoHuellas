@@ -1,6 +1,7 @@
 git branch (para mostrar/ crear una rama)
 git checkout (para elegir la rama)
 git add  . (para ir agregando los cambios opcional poner punto para decir TODO)
-git commit -m "(mensaje)" (para subir a github)
+git commit -m "(mensaje)" (guarda cambios hasta ese instante  )
 git merge <rama dev> (debo estar en la rama main o a la que quiero que unir una rama)
 git status (mestras los archivos que se agregaron o modificaron)
+git push (es para subir a github)
