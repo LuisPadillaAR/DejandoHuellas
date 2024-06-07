@@ -13,11 +13,11 @@ export default function Patient() {
             <Table stickyHeader>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Nombre</TableCell>
-                        <TableCell>Tipo</TableCell>
-                        <TableCell>Tamaño</TableCell>
-                        <TableCell>peso ()</TableCell>
-                        <TableCell>dueño</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Nombre</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tipo</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tamaño (cm)</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>peso (kg)</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>dueño</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -25,11 +25,11 @@ export default function Patient() {
                         pets.map(e => {
                             return (
                                 <TableRow>
-                                    <TableCell>{e.name}</TableCell>
-                                    <TableCell>{e.type}</TableCell>
-                                    <TableCell>{e.size}</TableCell>
-                                    <TableCell>{e.weight}</TableCell>
-                                    <TableCell>{e.owner}</TableCell>
+                                    <TableCell align="center">{e.name}</TableCell>
+                                    <TableCell align="center">{e.type}</TableCell>
+                                    <TableCell align="center">{e.size}</TableCell>
+                                    <TableCell align="center">{e.weight}</TableCell>
+                                    <TableCell align="center">{e.owner}</TableCell>
                                 </TableRow> 
                             );
                         })
@@ -52,7 +52,7 @@ export default function Patient() {
                     <Grid item md={2} textAlign={"center"}>
                         <Button variant="text" color="secondary">Crear</Button>
                     </Grid>
-                    <Grid item md={10} height={400} sx={{overflow: "scroll"}}>
+                    <Grid item md={10}>
                         <DataTable />
                     </Grid>
                 </Grid>

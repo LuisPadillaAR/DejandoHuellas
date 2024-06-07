@@ -1,6 +1,7 @@
 import NavBar from '../navbar/NavBar';
 import './homeStyle.css';
-import { Button, Container, Grid } from '@mui/material';
+import { Button, Container, Grid, Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 
 
@@ -9,10 +10,10 @@ export const ExplorerNav = () => {
         <Container className='explorer' maxWidth="auto" sx={{p: 2, width: "fit-content", m: 0}}>
             <Grid container columns={2}>
                 <Grid item md={2}>
-                    <Button variant='text'>Gestión</Button>
+                    <Link component={RouterLink} variant='button' to={'/patients'}>Gestión</Link>
                 </Grid>
                 <Grid item md={2}>
-                    <Button variant='text'>Cerrar sesión</Button>
+                    <Link component={RouterLink} variant='button' to={'/login'}>Cerrar sesión</Link>
                 </Grid>
             </Grid>
         </Container>
