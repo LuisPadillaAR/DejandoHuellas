@@ -14,7 +14,8 @@ export const Login = () => {
                 <div className="form__title">Bienvenido Voluntariado</div>
                 <input className="form__input form__input-user" type="text" name="user" id="user" placeholder="User" />
                 <input className="form__input form__input-password" type="password" name="password" id="password" placeholder="Password" />
-                <input className="form__btn form__btn-login" type="button" value="Login" onClick={login} />
+                <Link className='form__btn form__btn-login' to={'/'}>Login</Link>
+                {/* <input className="form__btn form__btn-login" type="button" value="Login" onClick={login} /> */}
                 <p className='form__links'>¿No tienes una cuentas? Entra
                     <Link to={'/register'}> aquí</Link>
                 </p>
