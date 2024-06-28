@@ -1,4 +1,5 @@
-import { Table, Grid, Button, TableHead, TableRow, TableCell, TableBody } from "@mui/material";
+import { Table, Grid, TableHead, TableRow, TableCell, TableBody , Link} from "@mui/material";
+import { Link as Routerlink } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
 import pets from "../../assets/pets.json";
 
@@ -50,7 +51,7 @@ export default function Patient() {
             <Grid item md={12}>
                 <Grid container columns={12} sx={{p: 3}}> 
                     <Grid item md={2} textAlign={"center"}>
-                        <Button variant="text" color="secondary">Crear</Button>
+                        <Link variant="button" component={Routerlink} to={'/patients/create'}>Crear</Link>
                     </Grid>
                     <Grid item md={10}>
                         <DataTable />
