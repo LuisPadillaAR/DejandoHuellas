@@ -1,6 +1,5 @@
 
-import { Grid, Link, TextField, Typography } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { Grid, TextField, Typography } from "@mui/material";
 import NavBar from "../navbar/NavBar";
 
 export const CreatePatient = () => {
