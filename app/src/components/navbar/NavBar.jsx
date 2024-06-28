@@ -31,9 +31,6 @@ const NavLinks = () => {
             <Grid item>
                 <Link component={RouterLink} to={'/'} variant='body1'>Inicio</Link>
             </Grid>
-            <Grid item>
-                <Link component={RouterLink} to={'/patients'} variant='body1'>Animales</Link>
-            </Grid>
             <Grid item >
                 <Link component={RouterLink} to={'/'} variant='body1'>Sobre nosotros</Link>
             </Grid>
