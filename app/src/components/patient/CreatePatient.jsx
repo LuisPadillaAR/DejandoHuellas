@@ -1,5 +1,5 @@
 
-import { Grid, TextField, Typography, Link } from "@mui/material";
+import { Grid, TextField, Typography, Link, InputLabel, Select, MenuItem } from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom';
 import NavBar from "../navbar/NavBar";
 
@@ -20,7 +20,18 @@ export const CreatePatient = () => {
                                 <TextField variant="outlined" label='Nombre'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='Tipo'/>
+                                {/* <TextField variant="outlined" label='Tipo'/> */}
+                                <InputLabel id="demo-simple-select-label">Tiposs</InputLabel>
+                                <Select
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={'tipo'}
+                                    label="Tipo"
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
                             </Grid>
                             <Grid item md={4}>
                                 <TextField variant="outlined" label='tamano'/>
