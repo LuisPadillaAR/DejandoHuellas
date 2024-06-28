@@ -21,26 +21,31 @@ export const CreatePatient = () => {
                             </Grid>
                             <Grid item md={4}>
                                 {/* <TextField variant="outlined" label='Tipo'/> */}
-                                <InputLabel id="demo-simple-select-label">Tiposs</InputLabel>
                                 <Select
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
                                     value={'tipo'}
                                     label="Tipo"
                                 >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
+                                <MenuItem value={10}>Perro</MenuItem>
+                                <MenuItem value={20}>Gato</MenuItem>
+                                <MenuItem value={30}>otro</MenuItem>
                                 </Select>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='tamano'/>
+                                <TextField variant="outlined" label='Color'/>
+                            </Grid>
+                            <Grid item md={4}>
+                                <TextField variant="outlined" label='Fecha de rescate'/>
+                            </Grid>
+                            <Grid item md={4}>
+                                <TextField variant="outlined" label='Tamano'/>
                             </Grid>
                             <Grid item md={4}>
                                 <TextField variant="outlined" label='peso'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='Voluntario'/>
+                                <TextField variant="outlined" label='edad(aprox.)'/>
                             </Grid>
                             <Grid item md={12}>
                                 <TextField variant="outlined" label='Descripción' multiline rows={10}/>
