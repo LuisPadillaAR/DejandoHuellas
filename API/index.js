@@ -1,15 +1,15 @@
 import express from 'express'
 import dotenv from 'dotenv';
 import db from './db.js'
-import { ModelEspecie } from './models/models.js';
+import { ModelEspecie, ModelPatient } from './models/models.js';
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT
 
-const dt = async () => {
-    return await ModelEspecie.find();
+const dt = async (bb) => {
+    return await bb.find();
 }
 
 db.then(() => {
@@ -20,9 +20,16 @@ db.then(() => {
 }).catch((err) => console.log(err))
 
 
+app.get('/',(req, res) => res.send('home'))
 
-app.get('/', (req, res) => {
-    dt()
+app.get('/species', (req, res) => {
+    dt(ModelEspecie)
+    .then((data) => res.json(data))
+    .catch((err) => console.log(err))
+})
+
+app.get('/patients', (req, res) => {
+    dt(ModelPatient)
     .then((data) => res.json(data))
     .catch((err) => console.log(err))
 })
