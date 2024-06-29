@@ -1,8 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv';
 import db from './db.js'
-
-import GetData from './getdata.js'
+import { ModelEspecie } from './models/models.js';
 
 dotenv.config();
 
@@ -10,7 +9,7 @@ const app = express();
 const port = process.env.PORT
 
 const dt = async () => {
-    return await GetData.find();
+    return await ModelEspecie.find();
 }
 
 db.then(() => {
