@@ -20,5 +20,15 @@ const patient = new Schema([
     }
 ])
 
+const attention = new Schema([
+    {
+        date: String,
+        patient: String,
+        volunteer: String,
+        description: String
+    }
+])
+
 export const ModelEspecie = model('especies', specie)
 export const ModelPatient = model('pacientes', patient)
+export const ModelAttention = model('atenciones', attention)

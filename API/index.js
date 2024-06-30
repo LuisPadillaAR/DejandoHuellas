@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv';
 import db from './db.js'
-import { ModelEspecie, ModelPatient } from './models/models.js';
+import { ModelEspecie, ModelPatient, ModelAttention } from './models/models.js';
 
 dotenv.config();
 
@@ -30,6 +30,12 @@ app.get('/species', (req, res) => {
 
 app.get('/patients', (req, res) => {
     dt(ModelPatient)
+    .then((data) => res.json(data))
+    .catch((err) => console.log(err))
+})
+
+app.get('/attention', (req, res) => {
+    dt(ModelAttention)
     .then((data) => res.json(data))
     .catch((err) => console.log(err))
 })
