@@ -12,7 +12,7 @@ export const CreatePatient = () => {
             <Grid item md={12}>
                 <Grid container columns={12} sx={{p: 3}}> 
                     <Grid item md={12}>
-                        <Typography variant="h3">Nuevo</Typography>
+                        <Typography variant="h4">Nuevo Paciente</Typography>
                     </Grid>
                     <Grid item padding={'10px'}>
                         <Grid container columns={12} flexDirection={'row'} gap={2}>
