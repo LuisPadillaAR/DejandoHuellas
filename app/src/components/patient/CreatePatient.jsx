@@ -20,17 +20,7 @@ export const CreatePatient = () => {
                                 <TextField variant="outlined" label='Nombre'/>
                             </Grid>
                             <Grid item md={4}>
-                                {/* <TextField variant="outlined" label='Tipo'/> */}
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={'tipo'}
-                                    label="Tipo"
-                                >
-                                <MenuItem value={10}>Perro</MenuItem>
-                                <MenuItem value={20}>Gato</MenuItem>
-                                <MenuItem value={30}>otro</MenuItem>
-                                </Select>
+                                <TextField variant="outlined" label="Tipo"/>
                             </Grid>
                             <Grid item md={4}>
                                 <TextField variant="outlined" label='Color'/>
@@ -53,7 +43,14 @@ export const CreatePatient = () => {
                         </Grid>
                     </Grid>
                     <Grid item>
-                        <Link variant="button" component={RouterLink} >Guardar</Link>
+                        <Grid container gap={1}>
+                            <Grid item>
+                                <Link variant="button" component={RouterLink} >Guardar</Link>
+                            </Grid>
+                            <Grid item>
+                                <Link variant="button" component={RouterLink} >Cancelar</Link>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>

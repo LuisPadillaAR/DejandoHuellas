@@ -19,7 +19,7 @@ const Title = () => {
         /*<div className='navbar__title'>Dejando Huellas
             
         </div>*/
-        <Typography variant='h1' fontSize={"3em"} width="600px" fontFamily={"Poetsen One"}>Dejando Huellas
+        <Typography variant='h1' fontSize={"2.5em"} width="600px" fontFamily={"Poetsen One"}>Dejando Huellas
             <img className='navbar__logo' src={logo} alt="logo"/>
         </Typography>
     );
