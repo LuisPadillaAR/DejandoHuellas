@@ -26,7 +26,7 @@ export const CreatePatient = () => {
                                 <TextField variant="outlined" label='Color'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='Fecha de rescate'/>
+                                <TextField variant="outlined"  label='Fecha de rescate'/>
                             </Grid>
                             <Grid item md={4}>
                                 <TextField variant="outlined" label='Tamano'/>
@@ -48,7 +48,7 @@ export const CreatePatient = () => {
                                 <Link variant="button" component={RouterLink} >Guardar</Link>
                             </Grid>
                             <Grid item>
-                                <Link variant="button" component={RouterLink} >Cancelar</Link>
+                                <Link variant="button" component={RouterLink} to={"/patients"} >Cancelar</Link>
                             </Grid>
                         </Grid>
                     </Grid>
