@@ -1,8 +1,8 @@
-import express from 'express'
+import express, { json } from 'express'
 import dotenv from 'dotenv';
 import db from './db.js'
 import { ModelEspecie, ModelPatient, ModelAttention } from './models/models.js';
-
+import cors from 'cors'
 dotenv.config();
 
 const app = express();
@@ -21,6 +21,8 @@ db.then(() => {
 
 
 app.get('/',(req, res) => res.send('home'))
+app.use(cors())
+app.use(json())
 
 app.get('/species', (req, res) => {
     dt(ModelEspecie)

@@ -12,12 +12,14 @@ export default function Patient() {
 
     useEffect(() => {
         (async () => {
-            await axios.get("http://192.168.253.93:3030/patients").then((dat) => setDatos(dat)).catch((err) => console.log(err))
+            await axios.get("http://192.168.253.93:3030/patients").then((dat) => {
+                setDatos(dat)
+                console.log(dat.data)
+            }).catch((err) => console.log(err))
         })()
-
     },[])
 
-    console.log(datos)
+    
 
 
     const DataTable = () => {
