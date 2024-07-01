@@ -1,12 +1,23 @@
-import { Table, Grid, TableHead, TableRow, TableCell, TableBody , Link} from "@mui/material";
+import { Table, Grid, TableHead, TableRow, TableCell, TableBody , Link, Button} from "@mui/material";
 import { Link as Routerlink } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
 import pets from "../../assets/pets.json";
+import axios from "axios;"
+import { useEffect, useState } from "react";
 
 export default function Patient() {
 
 
-    console.log(pets)
+    const [datos, setDatos] = useState(null)
+
+    useEffect(() => {
+        (async () => {
+            await axios.get("http://192.168.253.93:3030/patients").then((dat) => setDatos(dat)).catch((err) => console.log(err))
+        })()
+
+    },[])
+
+    console.log(datos)
 
 
     const DataTable = () => {
@@ -15,10 +26,10 @@ export default function Patient() {
                 <TableHead>
                     <TableRow>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Nombre</TableCell>
-                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tipo</TableCell>
-                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Tamaño (cm)</TableCell>
-                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>peso (kgmod)</TableCell>
-                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>dueño</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Especie</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Raza</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Fecha de rescate</TableCell>
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Opciones</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -27,10 +38,19 @@ export default function Patient() {
                             return (
                                 <TableRow>
                                     <TableCell align="center">{e.name}</TableCell>
-                                    <TableCell align="center">{e.type}</TableCell>
-                                    <TableCell align="center">{e.size}</TableCell>
-                                    <TableCell align="center">{e.weight}</TableCell>
-                                    <TableCell align="center">{e.owner}</TableCell>
+                                    <TableCell align="center">{e.species}</TableCell>
+                                    <TableCell align="center">{e.breed}</TableCell>
+                                    <TableCell align="center">{e.rescue_date}</TableCell>
+                                    <TableCell align="center">
+                                        <Grid container columnGap={1}>
+                                            <Grid item>
+                                                <Link variant="button" component={Routerlink}>Abrir</Link>
+                                            </Grid>
+                                            <Grid item>
+                                                <Link variant="button" component={Routerlink}>Eliminar</Link>
+                                            </Grid>
+                                        </Grid>
+                                    </TableCell>
                                 </TableRow> 
                             );
                         })

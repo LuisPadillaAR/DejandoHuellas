@@ -1,100 +1,12 @@
 [
     {
         "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
-    },
-    {
-        "name": "Jax",
-        "type": "Perro",
-        "size": 40,
-        "weight": 10,
-        "owner": "luis0907p@gmail.com"
+        "species": "Perro",
+        "breed": "Chihuahua",
+        "color": 10,
+        "rescue_date": "30/06/24",
+        "size": 12,
+        "weight": 23,
+        "age": 1
     }
 ]
