@@ -2,7 +2,7 @@ import { Table, Grid, TableHead, TableRow, TableCell, TableBody , Link, Button} 
 import { Link as Routerlink } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
 import pets from "../../assets/pets.json";
-import axios from "axios;"
+import axios from "axios"
 import { useEffect, useState } from "react";
 
 export default function Patient() {
