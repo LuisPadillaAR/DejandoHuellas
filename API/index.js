@@ -21,8 +21,7 @@ db.then(() => {
 
 
 app.get('/',(req, res) => res.send('home'))
-app.use(cors())
-app.use(json())
+
 
 app.get('/species', (req, res) => {
     dt(ModelEspecie)
@@ -41,3 +40,6 @@ app.get('/attention', (req, res) => {
     .then((data) => res.json(data))
     .catch((err) => console.log(err))
 })
+
+app.use(cors())
+app.use(json())

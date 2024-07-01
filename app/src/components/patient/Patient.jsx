@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export default function Patient() {
 
 
-    const [datos, setDatos] = useState(null)
+    const [datos, setDatos] = useState([])
 
     useEffect(() => {
         (async () => {
@@ -27,6 +27,7 @@ export default function Patient() {
             <Table stickyHeader>
                 <TableHead>
                     <TableRow>
+                        {datos.map}
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Nombre</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Especie</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Raza</TableCell>
