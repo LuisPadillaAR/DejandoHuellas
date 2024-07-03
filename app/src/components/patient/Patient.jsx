@@ -13,7 +13,7 @@ export default function Patient() {
     useEffect(() => {
         (async () => {
             await axios.get("http://192.168.253.93:3030/patients").then((dat) => {
-                setDatos(dat)
+                setDatos(dat.data)
                 console.log(dat.data)
             }).catch((err) => console.log(err))
         })()
@@ -27,7 +27,7 @@ export default function Patient() {
             <Table stickyHeader>
                 <TableHead>
                     <TableRow>
-                        {datos.map}
+                        <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Id</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Nombre</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Especie</TableCell>
                         <TableCell align="center" sx={{backgroundColor:"#ffdbff"}}>Raza</TableCell>
@@ -37,9 +37,10 @@ export default function Patient() {
                 </TableHead>
                 <TableBody>
                     {
-                        pets.map(e => {
+                        datos.map(e => {
                             return (
                                 <TableRow>
+                                    <TableCell align="center">{e._id}</TableCell>
                                     <TableCell align="center">{e.name}</TableCell>
                                     <TableCell align="center">{e.species}</TableCell>
                                     <TableCell align="center">{e.breed}</TableCell>

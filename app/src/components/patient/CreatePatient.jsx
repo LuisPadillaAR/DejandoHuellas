@@ -1,5 +1,6 @@
 
 import { Grid, TextField, Typography, Link} from "@mui/material";
+import { dateField } from '@mui'
 import { Link as RouterLink } from 'react-router-dom';
 import NavBar from "../navbar/NavBar";
 
@@ -20,25 +21,25 @@ export const CreatePatient = () => {
                                 <TextField variant="outlined" label='Nombre'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label="Tipo"/>
+                                <TextField variant="outlined" label="Especie"/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='Color'/>
+                                <TextField variant="outlined" label='Raza'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined"  label='Fecha de rescate'/>
+                                <TextField variant="outlined"  label='Color'/>
                             </Grid>
                             <Grid item md={4}>
-                                <TextField variant="outlined" label='Tamano'/>
+                                <TextField variant="outlined" label='Fecha de rescate'/>
+                            </Grid>
+                            <Grid item md={4}>
+                                <TextField variant="outlined" label='Tamaño'/>
                             </Grid>
                             <Grid item md={4}>
                                 <TextField variant="outlined" label='peso'/>
                             </Grid>
-                            <Grid item md={4}>
-                                <TextField variant="outlined" label='edad(aprox.)'/>
-                            </Grid>
                             <Grid item md={12}>
-                                <TextField variant="outlined" label='Descripción' multiline rows={10}/>
+                                <TextField variant="outlined" label='Edad'/>
                             </Grid>
                         </Grid>
                     </Grid>

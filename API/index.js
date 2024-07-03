@@ -19,6 +19,8 @@ db.then(() => {
     })
 }).catch((err) => console.log(err))
 
+app.use(cors())
+app.use(json())
 
 app.get('/',(req, res) => res.send('home'))
 
@@ -41,5 +43,3 @@ app.get('/attention', (req, res) => {
     .catch((err) => console.log(err))
 })
 
-app.use(cors())
-app.use(json())
