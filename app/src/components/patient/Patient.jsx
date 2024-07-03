@@ -1,7 +1,6 @@
 import { Table, Grid, TableHead, TableRow, TableCell, TableBody , Link, Button} from "@mui/material";
 import { Link as Routerlink } from "react-router-dom";
 import NavBar from "../navbar/NavBar";
-import pets from "../../assets/pets.json";
 import axios from "axios"
 import { useEffect, useState } from "react";
 
