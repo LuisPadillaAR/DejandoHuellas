@@ -8,6 +8,7 @@ export default function Patient() {
 
 
     const [datos, setDatos] = useState([])
+    const [change, setChange] = useState(true)
 
     useEffect(() => {
         (async () => {
@@ -16,8 +17,17 @@ export default function Patient() {
                 console.log(dat.data)
             }).catch((err) => console.log(err))
         })()
-    },[])
+    },[change])
 
+    const deletePatient = async (e) => {
+        console.log(e.target.id);
+        await axios.delete(`http://localhost:3030/patients/${e.target.id}`)
+        .then(() => {
+            alert('eliminado')
+            setChange(!change)
+    })
+        .catch((err) => console.log(err)) 
+    }
     
 
 
@@ -50,7 +60,7 @@ export default function Patient() {
                                                 <Link variant="button" to={`/patients/${e._id}`} component={Routerlink}>Abrir</Link>
                                             </Grid>
                                             <Grid item>
-                                                <Link variant="button" component={Routerlink}>Eliminar</Link>
+                                                <Link variant="button" id={e._id}  onClick={deletePatient} component={Routerlink}>Eliminar</Link>
                                             </Grid>
                                         </Grid>
                                     </TableCell>
