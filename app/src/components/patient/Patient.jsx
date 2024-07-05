@@ -47,7 +47,7 @@ export default function Patient() {
                                     <TableCell align="center">
                                         <Grid container columnGap={1}>
                                             <Grid item>
-                                                <Link variant="button" component={Routerlink}>Abrir</Link>
+                                                <Link variant="button" to={`/patients/${e._id}`} component={Routerlink}>Abrir</Link>
                                             </Grid>
                                             <Grid item>
                                                 <Link variant="button" component={Routerlink}>Eliminar</Link>

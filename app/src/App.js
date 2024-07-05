@@ -6,6 +6,7 @@ import { Home } from './components/home/Home';
 import Management from './components/management/Management';
 import Patient from './components/patient/Patient';
 import { CreatePatient } from './components/patient/CreatePatient';
+import { ViewPatient } from './components/patient/ViewPatient';
 
 export default function App() {
 
@@ -34,6 +35,10 @@ export default function App() {
     {
       path: '/patients/create',
       element: <CreatePatient />
+    },
+    {
+      path: '/patients/:id',
+      element: <ViewPatient />
     }
   ])
  
