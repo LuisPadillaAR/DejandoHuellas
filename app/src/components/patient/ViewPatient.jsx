@@ -1,5 +1,5 @@
 
-import { Grid, TextField, Typography, Link} from "@mui/material";
+import { Grid, TextField, Typography, Link, Button} from "@mui/material";
 import { Link as RouterLink, useParams } from 'react-router-dom';
 import NavBar from "../navbar/NavBar";
 import { useEffect, useRef, useState } from "react";
@@ -103,6 +103,11 @@ export const ViewPatient = () => {
                             </Grid>
                             <Grid item>
                                 <Link variant="button" component={RouterLink} to={"/patients"} >Cancelar</Link>
+                            </Grid>
+                            <Grid item>
+                                <Button variant="contained" color="success" >
+                                <Link   component={RouterLink} to={"/patients"} >Crear Atención</Link>
+                                </Button>
                             </Grid>
                         </Grid>
                     </Grid>
