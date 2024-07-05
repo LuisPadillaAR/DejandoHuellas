@@ -11,7 +11,7 @@ export default function Patient() {
 
     useEffect(() => {
         (async () => {
-            await axios.get("http://192.168.253.93:3030/patients").then((dat) => {
+            await axios.get("http://localhost:3030/patients").then((dat) => {
                 setDatos(dat.data)
                 console.log(dat.data)
             }).catch((err) => console.log(err))
