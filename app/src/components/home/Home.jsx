@@ -10,7 +10,10 @@ export const ExplorerNav = () => {
         <Container className='explorer' maxWidth="auto" sx={{p: 2, width: "fit-content", m: 0}}>
             <Grid container columns={2}>
                 <Grid item md={2}>
-                    <Link component={RouterLink} variant='button' to={'/patients'}>Gestión</Link>
+                    <Link component={RouterLink} variant='button' to={'/patients'}>Pacientes</Link>
+                </Grid>
+                <Grid item md={2}>
+                    <Link component={RouterLink} variant='button' to={'/Attentions'}>Ateciones</Link>
                 </Grid>
                 <Grid item md={2}>
                     <Link component={RouterLink} variant='button' to={'/login'}>Cerrar sesión</Link>
