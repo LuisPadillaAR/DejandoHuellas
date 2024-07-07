@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import db from './db.js'
 import { ModelEspecie, ModelPatient, ModelAttention } from './models/models.js';
 import cors from 'cors'
-import routerMain from './routes/routes.js';
+import { routerAttention, routerMain } from './routes/routes.js';
 dotenv.config();
 
 const app = express();
@@ -24,4 +24,5 @@ app.get('/',(req, res) => res.send('home'))
 
 
 app.use('/patients', routerMain)
+app.use('/attentions', routerAttention)
 

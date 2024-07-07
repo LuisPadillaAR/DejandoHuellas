@@ -105,9 +105,7 @@ export const ViewPatient = () => {
                                 <Link variant="button" component={RouterLink} to={"/patients"} >Cancelar</Link>
                             </Grid>
                             <Grid item>
-                                <Button variant="contained" color="success" >
-                                <Link   component={RouterLink} to={"/patients"} >Crear Atención</Link>
-                                </Button>
+                                <Link variant="button"   component={RouterLink} to={"/atentions/create"} >Crear Atención</Link>
                             </Grid>
                         </Grid>
                     </Grid>

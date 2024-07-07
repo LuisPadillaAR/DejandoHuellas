@@ -7,6 +7,8 @@ import Management from './components/management/Management';
 import Patient from './components/patient/Patient';
 import { CreatePatient } from './components/patient/CreatePatient';
 import { ViewPatient } from './components/patient/ViewPatient';
+import Attentions  from './components/attention/Attentions'
+import ViewAttentions from './components/attention/ViewAttentions';
 
 export default function App() {
 
@@ -39,6 +41,14 @@ export default function App() {
     {
       path: '/patients/:id',
       element: <ViewPatient />
+    },
+    {
+      path: '/attentions',
+      element: <Attentions />
+    },
+    {
+      path: '/attentions/:id',
+      element: <ViewAttentions />
     }
   ])
  

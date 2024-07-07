@@ -22,10 +22,8 @@ const patient = new Schema([
 
 const attention = new Schema([
     {
-        date: String,
         patient: String,
-        volunteer: String,
-        description: String
+        attentions: Array
     }
 ])
 

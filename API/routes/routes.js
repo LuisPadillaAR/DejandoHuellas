@@ -1,8 +1,10 @@
 
 import { Router } from "express"
 import { createPatient, deletePatient, getAll, getPatientId, updatePatient  } from "../controllers/controller.js";
+import { deleteAttention, getAllA, getAttentionId } from "../controllers/controllerAtt.js";
 
-const routerMain = Router();
+export const routerMain = Router();
+export const routerAttention = Router()
 
 
 routerMain.get('/', getAll )
@@ -11,4 +13,5 @@ routerMain.put('/:id', updatePatient)
 routerMain.delete('/:id', deletePatient)
 routerMain.post('/create', createPatient)
 
-export default routerMain;
+routerAttention.get('/', getAllA )
+routerAttention.get('/:id',getAttentionId)
