@@ -60,7 +60,7 @@ export default function Patient() {
                                                 <Link variant="button" to={`/patients/${e._id}`} component={Routerlink}>Abrir</Link>
                                             </Grid>
                                             <Grid item>
-                                                <Link variant="button" id={e._id}  onClick={deletePatient} component={Routerlink}>Eliminar</Link>
+                                                <Link variant="button" sx={{color: "red"}} id={e._id}  onClick={deletePatient} component={Routerlink}>Eliminar</Link>
                                             </Grid>
                                         </Grid>
                                     </TableCell>
