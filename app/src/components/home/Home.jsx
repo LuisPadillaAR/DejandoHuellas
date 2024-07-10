@@ -13,6 +13,9 @@ export const ExplorerNav = () => {
                     <Link component={RouterLink} variant='button' to={'/patients'}>Pacientes</Link>
                 </Grid>
                 <Grid item md={2}>
+                    <Link component={RouterLink} variant='button' to={'/statistics'}>Estadisticas</Link>
+                </Grid>
+                <Grid item md={2}>
                     <Link component={RouterLink} variant='button' to={'/login'}>Cerrar sesión</Link>
                 </Grid>
             </Grid>

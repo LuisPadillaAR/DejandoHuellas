@@ -9,6 +9,7 @@ import { CreatePatient } from './components/patient/CreatePatient';
 import { ViewPatient } from './components/patient/ViewPatient';
 import Attentions  from './components/attention/Attentions'
 import ViewAttentions from './components/attention/ViewAttentions';
+import Statistics from './components/statistics/Statistics';
 
 export default function App() {
 
@@ -41,6 +42,10 @@ export default function App() {
     {
       path: '/patients/:id',
       element: <ViewPatient />
+    },
+    {
+      path: '/statistics',
+      element: <Statistics />
     },
     {
       path: '/attentions',
