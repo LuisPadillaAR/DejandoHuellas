@@ -16,7 +16,8 @@ const patient = new Schema([
        rescue_date: String,
        size: String,
        weight: String,
-       age: String
+       age: String,
+       attentions: Array
     }
 ])
 
