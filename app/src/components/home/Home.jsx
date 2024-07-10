@@ -1,6 +1,6 @@
 import NavBar from '../navbar/NavBar';
 import './homeStyle.css';
-import { Button, Container, Grid, Link } from '@mui/material';
+import { Container, Grid, Link } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
 
@@ -11,9 +11,6 @@ export const ExplorerNav = () => {
             <Grid container columns={2}>
                 <Grid item md={2}>
                     <Link component={RouterLink} variant='button' to={'/patients'}>Pacientes</Link>
-                </Grid>
-                <Grid item md={2}>
-                    <Link component={RouterLink} variant='button' to={'/Attentions'}>Ateciones</Link>
                 </Grid>
                 <Grid item md={2}>
                     <Link component={RouterLink} variant='button' to={'/login'}>Cerrar sesión</Link>
