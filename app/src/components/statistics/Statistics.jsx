@@ -28,13 +28,10 @@ export default function Statistics() {
             <p>Estadisticas</p>
             <p>{datos?.map(e => {
               const att = e.attentions
+              const attda = att.find(e => e.operation === "vacunaciones")
               return (
-                att?.map((t) => {
-                console.log(t.operation);
-                return (
-                  <p>{t.operation}</p>
-                )
-              })
+                <p>{attda.operation}</p>
+                
               )
               
             })}</p>
