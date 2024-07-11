@@ -1,13 +1,8 @@
 
-date
-"06/07/2014"
-operation
-"vacuna"
-descrtion
-"vacuna contra la rabia"
-place
-"canto del llano"
-volunteer
-"Armando"
-observations
-"aja"
+vacunaciones
+desparasitación
+chequeos generales
+cirugias
+tratamiento dental
+laboratorio y analisis
+
