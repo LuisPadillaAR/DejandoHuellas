@@ -130,7 +130,7 @@ export default function Statistics() {
         <NavBar />
       </Grid>
       <Grid item xs={12}>
-        <p>Estadísticas</p>
+        <p>Estadísticas:</p>
         <div style={{color: "#FF5733 "}}>Vacunaciones: {vc}</div>
         <div style={{color: "#33FF57 "}}>desparasitación: {desp}</div>
         <div style={{color: "#3357FF  "}}>chequeos generales: {cg}</div>
