@@ -32,7 +32,7 @@ const NavLinks = () => {
                 <Link component={RouterLink} to={'/'} variant='body1'>Inicio</Link>
             </Grid>
             <Grid item >
-                <Link component={RouterLink} to={'/'} variant='body1'>Sobre nosotros</Link>
+                <Link component={RouterLink} to={'http://dejando-huellas.weebly.com/'} variant='body1'>Sobre nosotros</Link>
             </Grid>
         </Grid>
     );
