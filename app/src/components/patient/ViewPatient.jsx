@@ -24,6 +24,7 @@ export const ViewPatient = () => {
   const [weight, setWeight] = useState("");
   const [age, setAge] = useState("");
   const [att, setAtt] = useState([]);
+  const [idPat, setIdpat] = useState()
 
   useEffect(() => {
     (async () => {
@@ -37,6 +38,7 @@ export const ViewPatient = () => {
   }, [id]);
 
   useEffect(() => {
+    setIdpat(datos._id);
     setName(datos.name);
     setSpecies(datos.species);
     setBreed(datos.breed);
@@ -56,6 +58,8 @@ export const ViewPatient = () => {
     datos.weight,
     datos.age,
     datos.att,
+    datos._id,
+    datos.attentions
   ]);
 
   const updatePatient = async () => {
@@ -226,7 +230,7 @@ export const ViewPatient = () => {
                 <Link
                   variant="button"
                   component={RouterLink}
-                  to={"/atentions/create"}
+                  to={`/attentions/create/${idPat}`}
                 >
                   Crear Atención
                 </Link>

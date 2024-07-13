@@ -28,7 +28,17 @@ export const CreatePatient = () => {
                 rescue_date: rescue_date,
                 size: size,
                 weight: weight,
-                age: age
+                age: age,
+                attentions: [
+                    {
+                        date: "12/12/12",
+                        operation: "Vacunaciones",
+                        description: "vacuna General",
+                        volunteer: "general",
+                        observations: "esto es una prueba",
+                        place: "panama"
+                    }
+                ]
              })
         .then(() =>  alert('creado'))
         .catch(() => console.log('error'))

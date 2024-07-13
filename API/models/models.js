@@ -28,6 +28,17 @@ const attention = new Schema([
     }
 ])
 
+const createAttention = new Schema([
+    {
+        date: String,
+        operation: String, 
+        description: String,
+        volunteer: String,
+        observations: String,
+        place: String
+    }
+])
+
 export const ModelEspecie = model('especies', specie)
 export const ModelPatient = model('pacientes', patient)
 export const ModelAttention = model('atenciones', attention)

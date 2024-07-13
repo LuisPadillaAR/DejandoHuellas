@@ -10,6 +10,7 @@ import { ViewPatient } from './components/patient/ViewPatient';
 import Attentions  from './components/attention/Attentions'
 import ViewAttentions from './components/attention/ViewAttentions';
 import Statistics from './components/statistics/Statistics';
+import { CreateAttention } from './components/attention/CreateAttention';
 
 export default function App() {
 
@@ -54,6 +55,10 @@ export default function App() {
     {
       path: '/attentions/:id',
       element: <ViewAttentions />
+    },
+    {
+      path: '/attentions/create/:id',
+      element: <CreateAttention />
     }
   ])
  
