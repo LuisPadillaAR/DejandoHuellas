@@ -2,7 +2,7 @@ import express, { json } from 'express'
 import dotenv from 'dotenv';
 import db from './db.js'
 import cors from 'cors'
-import { routerAttention, routerMain, routerUser } from './routes/routes.js';
+import { routerAttention, routerMain, routerUsers } from './routes/routes.js';
 dotenv.config();
 
 const app = express();
@@ -21,8 +21,6 @@ app.use(json())
 
 app.get('/',(req, res) => res.send('home'))
 
-
 app.use('/patients', routerMain)
 app.use('/attentions', routerAttention)
-app.use('/users', routerUser)
-
+app.ppst('/users', routerUsers)

@@ -6,7 +6,7 @@ import { getUsers } from "../controllers/controllerUser.js";
 
 export const routerMain = Router();
 export const routerAttention = Router();
-export const routerUser = Router();
+export const routerUsers = Router();
 
 
 routerMain.get('/', getAll )
@@ -18,6 +18,6 @@ routerMain.post('/create', createPatient)
 routerAttention.get('/', getAllA )
 routerAttention.get('/:id',getAttentionId)
 
-routerUser.post('/', getUsers)
+routerUsers.post('/:user', getUsers)
 
 
