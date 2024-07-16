@@ -23,4 +23,4 @@ app.get('/',(req, res) => res.send('home'))
 
 app.use('/patients', routerMain)
 app.use('/attentions', routerAttention)
-app.ppst('/users', routerUsers)
+app.use('/users', routerUsers)

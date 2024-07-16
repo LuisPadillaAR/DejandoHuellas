@@ -18,6 +18,6 @@ routerMain.post('/create', createPatient)
 routerAttention.get('/', getAllA )
 routerAttention.get('/:id',getAttentionId)
 
-routerUsers.post('/:user', getUsers)
+routerUsers.get('/:user', getUsers)
 
 
