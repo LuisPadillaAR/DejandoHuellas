@@ -1,8 +1,16 @@
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import './loginStyle.css'
+import { useRef } from 'react';
+import axios from 'axios'
 
 export const Login = () => {
+
+    const user = useRef()
+
+    const log = () => {
+        alert('entrando')
+    }
 
     return (
         <div className='container'>
@@ -10,7 +18,7 @@ export const Login = () => {
                 <div className="form__title">Bienvenido Voluntariado</div>
                 <input className="form__input form__input-user" type="text" name="user" id="user" placeholder="Usuario" />
                 <input className="form__input form__input-password" type="password" name="password" id="password" placeholder="Contraseña" />
-                <Link className='form__btn form__btn-login' to={'/'}>Iniciar</Link>
+                <Link className='form__btn form__btn-login' onClick={log} to={'/'}>Iniciar</Link>
                 <p className='form__links'>¿No tienes una cuentas? Entra
                     <Link to={'/register'}> aquí</Link>
                 </p>

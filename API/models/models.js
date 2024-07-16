@@ -39,6 +39,14 @@ const createAttention = new Schema([
     }
 ])
 
+const users = new Schema([
+    {
+        user: String,
+        password: String
+    }
+])
+
 export const ModelEspecie = model('especies', specie)
 export const ModelPatient = model('pacientes', patient)
 export const ModelAttention = model('atenciones', attention)
+export const ModelUser = model('users', users)
