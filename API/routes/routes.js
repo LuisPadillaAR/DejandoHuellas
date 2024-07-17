@@ -2,7 +2,7 @@
 import { Router } from "express"
 import { createPatient, deletePatient, getAll, getPatientId, updatePatient  } from "../controllers/controller.js";
 import { deleteAttention, getAllA, getAttentionId } from "../controllers/controllerAtt.js";
-import { getUsers } from "../controllers/controllerUser.js";
+import { createUser, getUsers } from "../controllers/controllerUser.js";
 
 export const routerMain = Router();
 export const routerAttention = Router();
@@ -19,5 +19,6 @@ routerAttention.get('/', getAllA )
 routerAttention.get('/:id',getAttentionId)
 
 routerUsers.get('/:user', getUsers)
+routerUsers.post('/create', createUser)
 
 

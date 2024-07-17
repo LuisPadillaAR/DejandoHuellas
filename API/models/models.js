@@ -42,6 +42,7 @@ const createAttention = new Schema([
 const users = new Schema([
     {
         user: String,
+        email: String,
         password: String
     }
 ])
